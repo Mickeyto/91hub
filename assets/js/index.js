@@ -12,7 +12,7 @@ class Html{
     timeformate(time){
         const date = new Date(time * 1000);
         const year = date.getFullYear();
-        const month = date.getMonth() + 1 < 10 ? '0' + date.getMonth() : date.getMonth();
+        const month = date.getMonth() + 1 < 10 ? '0' + (date.getMonth()+1) : date.getMonth()+1;
         const dat = date.getDate();
         const h = date.getHours() < 10 ? '0' + date.getHours() : date.getHours();
         const m = date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes();
