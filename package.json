@@ -1,0 +1,45 @@
+{
+	"name": "91hub",
+	"displayName": "91hub",
+	"description": "91hub",
+	"version": "0.0.1",
+	"publisher": "mickeyvsce",
+	"repository": "https://github.com/Mickeyto/91hub",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.h91hub"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.h91hub",
+				"title": "91hub"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.12.21",
+		"gulp-sass": "^4.0.2",
+		"node-sass": "^4.11.0",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28"
+	},
+	"dependencies": {
+		"axios": "^0.18.0"
+	}
+}
