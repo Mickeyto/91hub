@@ -2,7 +2,7 @@
 	"name": "91hub",
 	"displayName": "91hub",
 	"description": "91hub",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "mickeyvsce",
 	"repository": "https://github.com/Mickeyto/91hub",
 	"engines": {
@@ -12,7 +12,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.h91hub"
+		"onCommand:extension.h91hub",
+		"onCommand:h91hub.videosCategories"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -20,6 +21,10 @@
 			{
 				"command": "extension.h91hub",
 				"title": "91hub"
+			},
+			{
+				"command": "h91hub.videosCategories",
+				"title": "91hub Categroies"
 			}
 		]
 	},
