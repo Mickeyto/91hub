@@ -13,7 +13,8 @@ const quickPick = vscode.window.createQuickPick();
 quickPick.onDidChangeSelection(select => {
   if (select[0]) {
     const item: any = select[0];
-    // quickPick.busy = true;
+    quickPick.busy = true;
+    quickPick.hide();
     Controller.categroiesVideosList(item.chid);
   }
 });
@@ -45,7 +46,6 @@ export const Controller = {
     Controller.webview(chid);
   },
   webview: (chid: any) => {
-    let currentPanel: vscode.WebviewPanel | undefined = undefined;
     if(JSON.stringify(Controller.currentPanel) === '{}'){
         Controller.currentPanel = vscode.window.createWebviewPanel(
             "91hub",

@@ -2,11 +2,19 @@
 	"name": "91hub",
 	"displayName": "91hub",
 	"description": "91hub",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "mickeyvsce",
-	"repository": "https://github.com/Mickeyto/91hub",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Mickeyto/91hub"
+	},
 	"engines": {
 		"vscode": "^1.32.0"
+	},
+	"icon": "logo.png",
+	"galleryBanner": {
+		"color": "#ffdd00",
+		"theme": "dark"
 	},
 	"categories": [
 		"Other"
